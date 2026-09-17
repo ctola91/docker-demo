@@ -23,3 +23,10 @@ docker compose up -d
 docker build -t prediction-api .
 docker run -p 8000:8000 prediction-api
 ```
+
+comando para probar el endpoint
+```bash
+curl -X POST http://localhost:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"features": [5.1, 3.5, 1.4, 0.2]}'
+```
