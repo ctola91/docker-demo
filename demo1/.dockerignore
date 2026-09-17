@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venev/
+.git
+.DS_Store
